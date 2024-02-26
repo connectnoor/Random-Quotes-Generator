@@ -1,0 +1,117 @@
+*{
+    margin: 0px;
+    padding:0px;
+    box-sizing: border-box;
+    font-family: "Reem Kufi", sans-serif;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: #030b15;
+    /* background-color: #1F212C; */
+    color:yellow;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.left-side-heading{
+    width: 40%;
+    padding: 10px;
+}
+.left-side-heading h1{
+    width: 90%;
+    text-align: center;
+    font-size: 4rem;
+}
+.quote-generator{
+    width: 50%;
+    box-shadow: 2px 2px 30px rgb(0, 0, 0);
+    border: 1px solid rgb(106, 106, 106);
+    border-radius: 20px;
+    padding: 20px 30px;
+    text-align: center;
+    color: #f7f5f5;
+    
+}
+.quote-generator h1{
+    font-size: 2.4rem;
+}
+#quote{
+    /* height: 130px; */
+    /* border: 1px solid red; */
+    padding: 20px 10px;
+    font-size: 1.2rem;
+}
+#author{
+    /* position: absolute;
+    right: 200px;
+    top: 62% ; */
+    font-size: 1.3rem;
+    /* background-color: red; */
+    text-align: end;
+    width: 90%;
+}
+.btns{
+    margin-top: 2rem;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+}
+.btns button{
+    padding: 10px 25px;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    font-size: 1.4rem;
+     align-items: center;
+     background-color: #767676;
+     color: white;
+     cursor: pointer;
+     transition: 0.4s ease-in-out;
+}
+.btns button:nth-child(2){
+    background-color: white;
+    color: black;
+}
+.btns button i{
+    color: blue;
+}
+.btns button:hover{
+    transform: scale(1.03);
+}
+
+@media only screen and (max-width: 850px) {
+    .container{
+        flex-direction: column;
+        justify-content: center;
+        gap: 2rem;
+        
+
+    }
+    .left-side-heading{
+        width: 90%;
+        /* background-color: blue; */
+    }
+    .left-side-heading h1{
+        font-size: 2.5rem;
+    }
+    .quote-generator{
+        width: 90%;
+        /* background-color: red; */
+    }
+    .btns button{
+        padding: 10px 15px;
+        
+        font-size: 1.1rem;
+         
+    }
+  }
+  @media only screen and (max-width: 400px) {
+    .left-side-heading h1{
+        font-size: 2rem;
+    }
+    .quote-generator h1{
+        font-size: 2rem;
+
+    }
+  }
